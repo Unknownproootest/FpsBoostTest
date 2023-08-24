@@ -1,4 +1,4 @@
-local runservice = game:GetService("RunService")
+local vim = game:GetService("VirtualInputManager")
 setfpscap(5000)
 local inputservice = game:GetService("UserInputService")
 local runservice = game:GetService("RunService")
