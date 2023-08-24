@@ -1,5 +1,9 @@
 local runservice = game:GetService("RunService")
 setfpscap(5000)
+local inputservice = game:GetService("UserInputService")
+local runservice = game:GetService("RunService")
+inputservice.WindowFocusReleased:Connect(function() runservice:Set3dRenderingEnabled(false) end)
+inputservice.WindowFocused:Connect(function() runservice:Set3dRenderingEnabled(true) end)
 
 -- Made by RIP#6666
 _G.Settings = {
@@ -25,4 +29,4 @@ _G.Settings = {
     ["Low Rendering"] = true, -- Lower Rendering
     ["Low Quality Parts"] = true -- Lower quality parts
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()￼Enter
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
